@@ -1,0 +1,146 @@
+<%= form_for(@children) do |f| %>
+  <% if @children.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@children.errors.count, "error") %> prohibited this child from being saved:</h2>
+
+      <ul>
+      <% @children.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sequence_number %><br />
+    <%= f.text_field :sequence_number %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :alias %><br />
+    <%= f.text_field :alias %>
+  </div>
+  <div class="field">
+    <%= f.label :dob%><br />
+    <%= f.text_field :dob %>
+  </div>
+  <div class="field">
+    <%= f.label :mother_name%><br />
+    <%= f.text_field :mother_name %>
+  </div>
+  <div class="field">
+    <%= f.label :sex%><br />
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :street%><br />
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :state%><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :city%><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :immunization%><br />
+    <%= f.text_field :immunization%>
+  </div>
+  <div class="field">
+    <%= f.label :diagnosis%><br />
+    <%= f.text_field :diagnosis%>
+  </div>
+
+  <h3>Emergency Contact</h3>
+
+    <div class="field">
+    <%= f.label :e_name, "Name"%><br />
+    <%= f.text_field :e_name %>
+  </div>
+  <div class="field">
+    <%= f.label :e_alias, "Alias"%><br />
+    <%= f.text_field :e_alias %>
+  </div>
+  <div class="field">
+    <%= f.label :e_relationship, 'Relationship' %><br />
+    <%= f.text_field :e_relationship %>
+  </div>
+  <div class="field">
+    <%= f.label :e_street, 'Street'%><br />
+    <%= f.text_field :e_street %>
+  </div>
+  <div class="field">
+    <%= f.label :e_state, 'State' %><br />
+    <%= f.text_field :e_state %>
+  </div>
+  <div class="field">
+    <%= f.label :city,'City' %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :e_telephone, 'Telephone'%><br />
+    <%= f.telephone_field :e_telephone %>
+  </div>
+
+  <h3>Clinic Information</h3>
+  
+  <div class="field">
+    <%= f.label :c_clinic, 'Clinic' %><br />
+    <%= f.text_field :c_clinic %>
+  </div>
+  <div class="field">
+    <%= f.label :c_street, 'Street' %><br />
+    <%= f.text_field :c_street %>
+  </div>
+  <div class="field">
+    <%= f.label :c_state, 'State' %><br />
+    <%= f.text_field :c_state %>
+  </div>
+  <div class="field">
+    <%= f.label :c_city, 'City' %><br />
+    <%= f.text_field :c_city %>
+  </div>
+  <div class="field">
+    <%= f.label :c_telephone, 'Telephone' %><br />
+    <%= f.telephone_field :c_telephone %>
+  </div>
+
+  <h3>Doctor Information</h3>
+
+  <div class="field">
+    <%= f.label :d_pediatrician, 'Pediatrician' %><br />
+    <%= f.text_field :d_pediatrician %>
+  </div>
+  <div class="field">
+    <%= f.label :d_clinic, 'Clinic' %><br />
+    <%= f.text_field :d_clinic %>
+  </div>
+  <div class="field">
+    <%= f.label :d_street, 'Street' %><br />
+    <%= f.text_field :d_street %>
+  </div>
+  <div class="field">
+    <%= f.label :d_state, 'State' %><br />
+    <%= f.text_field :d_state %>
+  </div>
+  <div class="field">
+    <%= f.label :d_city, 'City' %><br />
+    <%= f.text_field :d_city %>
+  </div>
+  <div class="field">
+    <%= f.label :d_telephone, 'Telephone' %><br />
+    <%= f.telephone_field :d_telephone %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

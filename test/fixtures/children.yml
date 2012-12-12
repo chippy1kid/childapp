@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sequence_number: 
+  first_name: 
+  last_name: 
+  alias: 
+  dob: 
+  mother_name: 
+  sex: 
+  street: 
+  state: 
+  city: 
+  e_name: 
+  e_alias: 
+  e_relationship: 
+  e_address: 
+  e_telephone: 
+  c_clinic: 
+  c_street: 
+  c_state: 
+  c_city: 
+  c_telephone: 
+  d_pediatrician: 
+  d_clinic: 
+  d_street: 
+  d_state: 
+  d_city: 
+  d_telephone: 1
+
+two:
+  sequence_number: 
+  first_name: 
+  last_name: 
+  alias: 
+  dob: 
+  mother_name: 
+  sex: 
+  street: 
+  state: 
+  city: 
+  e_name: 
+  e_alias: 
+  e_relationship: 
+  e_address: 
+  e_telephone: 
+  c_clinic: 
+  c_street: 
+  c_state: 
+  c_city: 
+  c_telephone: 
+  d_pediatrician: 
+  d_clinic: 
+  d_street: 
+  d_state: 
+  d_city: 
+  d_telephone: 1

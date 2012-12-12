@@ -1,0 +1,13 @@
+<div class="center hero-unit">
+	<h1>Children Health Development Passport</h1>
+	<%= link_to image_tag("crest.jpg", alt: "Rails"), 'http://rubyonrails.org/' %>
+
+	<h2>Child Health Information From Birth To Teen</h2>
+	<% if signed_in? %>
+		<%= link_to "Children Search", children_path, class: "btn btn-large btn-primary" %>
+	<% else %>
+		<%= link_to "Sign In", signin_path, class: "btn btn-large btn-primary" %>
+	<% end %>
+</div>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
+

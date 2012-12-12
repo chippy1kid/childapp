@@ -1,0 +1,277 @@
+
+	
+
+<div class="page-header">
+
+
+
+
+
+
+	<h1>Child Information</h1>
+
+	<div class="tabbable"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs">
+    <li class="active" id="mad"><a href="#tab1" data-toggle="tab">Child Info</a></li>
+    <li><a href="#tab2" data-toggle="tab">Emergency</a></li>
+    <li><a href="#tab3" data-toggle="tab">Clinic</a></li>
+    <li><a href="#tab4" data-toggle="tab">Doctor</a></li>
+  </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="tab1">
+      <table class="table table-striped">
+
+      	<tr>
+			<td>
+				<b>Sequence:</b>
+		  <%= @children.sequence_number %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+		
+				  <b>First name:</b>
+				  <%= @children.first_name %>
+				
+			</td>
+		</tr>
+		
+		<tr>
+			<td>
+				<b>Last name:</b>
+		  <%= @children.last_name %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Alias:</b>
+		  <%= @children.alias %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>DOB:</b>
+		  <%= @children.dob %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Sex:</b>
+		  <%= @children.sex %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Mothers Name:</b>
+		  <%= @children.mother_name %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Street:</b>
+		  <%= @children.street %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>State:</b>
+		  <%= @children.state %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>City:</b>
+		  <%= @children.city %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Immunization:</b>
+		  <%= @children.immunization %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Diagnosis:</b>
+		  <%= @children.diagnosis %>
+			</td>
+		</tr>
+
+
+      </table>
+    </div>
+    <div class="tab-pane" id="tab2">
+      
+    	<table class="table table-striped">
+    	<tr>
+			<td>
+				<b>Name:</b>
+		  <%= @children.e_name %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Alias:</b>
+		  <%= @children.e_alias %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Relationship:</b>
+		  <%= @children.e_relationship %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Street:</b>
+		  <%= @children.e_street %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>State:</b>
+		  <%= @children.e_state %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>City:</b>
+		  <%= @children.e_city %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Telephone:</b>
+		  <%= @children.e_telephone %>
+			</td>
+		</tr>
+
+	</table>
+    </div>
+
+    <div class="tab-pane" id="tab3">
+      <table class="table table-striped">
+      	<tr>
+			<td>
+				<b>Clinic:</b>
+		  <%= @children.c_clinic %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Street:</b>
+		  <%= @children.c_street %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>State:</b>
+		  <%= @children.c_state %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>City:</b>
+		  <%= @children.c_city %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Telephone:</b>
+		  <%= @children.c_telephone %>
+			</td>
+		</tr>
+
+      </table>
+    </div>
+
+    <div class="tab-pane active" id="tab4">
+      <table class="table table-striped">
+
+      	<tr>
+			<td>
+				<b>Pediatrician:</b>
+		  <%= @children.d_pediatrician %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Clinic:</b>
+		  <%= @children.d_clinic %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Street:</b>
+		  <%= @children.d_street %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>State:</b>
+		  <%= @children.d_state %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>City:</b>
+		  <%= @children.d_city %>
+			</td>
+		</tr>
+
+		<tr>
+			<td>
+				<b>Telephone:</b>
+		  <%= @children.d_telephone %>
+			</td>
+		</tr>
+
+      </table>
+    </div>
+
+  </div>
+</div>
+ 
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show');
+  })
+</script>
+
+
+	<!-- 
+	<%= link_to 'Search', children_path %>	|
+	<%= link_to 'Show', @children %>  -->
+		<br/><br/>
+
+	
+	
+		<%= link_to 'Edit', edit_child_path(@children) %> |
+		<%= link_to 'Back', children_path %> |          |
+		<%= link_to 'Children Passport', children_path %>
+
+</div>

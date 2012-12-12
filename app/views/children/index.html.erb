@@ -1,0 +1,50 @@
+<div class="center hero-unit">
+
+
+	
+
+<h1>Listing Children</h1>
+
+<br/>
+ 
+
+<%= form_tag children_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search",  name: 'nil' %>
+
+  </p>
+<% end %>
+
+<%= link_to 'All Children', children_path %>      |
+<%= link_to 'New Child', new_child_path %>
+
+<br/><br/><br/>
+
+  <table>
+    <tr>
+      <th>Sequence #</th><th></th>
+      <th>First name</th><th></th>
+      <th>Last name</th><th></th>
+      
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+
+  <% @children.each do |children| %>
+    <tr>
+      <td><%= children.sequence_number %></td><td></td>
+      <td><%= children.first_name %></td><td></td>
+      <td><%= children.last_name %></td> <td></td><td></td><td></td>
+      <td><%= link_to 'Show', children %></td> <td></td><td></td><td></td>
+      <td><%= link_to 'Edit', edit_child_path(children) %></td> <td></td><td></td><td></td>
+      <td><%= link_to 'Destroy', children, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+  </table>
+
+  <br /><br />
+
+ 
+</div>
