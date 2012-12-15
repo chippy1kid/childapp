@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  sequence_number: 1
+  name: MyString
+  alias: MyString
+  dob: 2012-12-14
+  sex: MyString
+  mother_name: MyString
+  street: MyString
+  string: MyString
+  state: MyString
+  city: MyString
+
+two:
+  sequence_number: 1
+  name: MyString
+  alias: MyString
+  dob: 2012-12-14
+  sex: MyString
+  mother_name: MyString
+  street: MyString
+  string: MyString
+  state: MyString
+  city: MyString

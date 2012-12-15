@@ -1,6 +1,9 @@
 ChildApp::Application.routes.draw do
+  resources :clients
+
+
   resources :users
-  resources :children
+  resources :children 
   resources :sessions, only: [:new, :create, :destroy]
 
 
